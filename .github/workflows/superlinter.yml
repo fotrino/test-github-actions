@@ -8,6 +8,7 @@ jobs:
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-          find: "dark:"
-          replace: ""
-          regex: false
+          find: '/\sdark:[^\s"\]+/'
+          replace: " "
+          include: "stubs/livewire/resources/views/components/**"
+          regex: true
