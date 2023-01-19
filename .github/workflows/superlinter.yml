@@ -10,5 +10,4 @@ jobs:
         with:
           find: '/\sdark:[^\s"\]+/'
           replace: " "
-          include: "stubs/livewire/resources/views/components/**"
           regex: true
